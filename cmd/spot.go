@@ -220,6 +220,7 @@ func printInstancesTable(instances []Instance, showAll bool) {
 		)
 	}
 	fmt.Println("Prices are shown per GPU per hour in USD.")
+	fmt.Println("For rental options, run: `hyperbolic rent spot --help`")
 	// Render the table
 	table.Render()
 
