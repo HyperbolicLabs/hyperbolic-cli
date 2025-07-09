@@ -1,10 +1,10 @@
 /*
-Copyright © 2025 NAME HERE <EMAIL ADDRESS>
+Copyright © 2025 Hyperbolic Labs
 
 */
 package main
 
-import "github.com/kaihuang724/hyperbolic-cli/cmd"
+import "github.com/HyperbolicLabs/hyperbolic-cli/cmd"
 
 func main() {
 	cmd.Execute()

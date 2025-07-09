@@ -1,5 +1,5 @@
 /*
-Copyright © 2025 KAI HUANG <kaihuang724@gmail.com>
+Copyright © 2025 Hyperbolic Labs
 */
 package cmd
 
