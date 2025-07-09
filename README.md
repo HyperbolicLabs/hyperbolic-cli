@@ -30,15 +30,13 @@ go build -o hyperbolic
 ### Using Go Install
 
 ```bash
-go install github.com/kaihuang724/hyperbolic-cli@latest
+go install github.com/HyperbolicLabs/hyperbolic-cli@latest
 ```
 
 ### Getting a Hyperbolic Account and API Token
 
-![Hyperbolic Website](./images/hyperbolicwebsite.png)
-
 1. Register for a Hyperbolic account:
-   - Visit [https://app.hyperbolic.xyz/](https://app.hyperbolic.xyz/)
+   - Visit [https://app.hyperbolic.xyz/](https://app.hyperbolic.ai/)
    - Create an account or log in to your existing account
    - Verify your email address
 
@@ -57,11 +55,10 @@ go install github.com/kaihuang724/hyperbolic-cli@latest
 
 4. Add your SSH public key:
    - Generate an SSH key pair if you don't already have one
-   - In [https://app.hyperbolic.xyz/](https://app.hyperbolic.xyz/), navigate to the "Settings" section
+   - In [https://app.hyperbolic.xyz/](https://app.hyperbolic.ai/), navigate to the "Settings" section
    - Scroll down to the SSH Public Key section
    - Paste your public key (usually from ~/.ssh/id_rsa.pub or similar)
    - Click the save icon
-
 
 ## Usage
 
@@ -70,53 +67,6 @@ go install github.com/kaihuang724/hyperbolic-cli@latest
 ```bash
 # Set your API key
 hyperbolic auth YOUR_API_KEY
-
-# View current configuration
-hyperbolic config
-```
-
-### Managing Instances
-
-```bash
-# View all your instances
-hyperbolic instances
-
-# View detailed information about a specific instance
-hyperbolic instances INSTANCE_ID
-
-# Get JSON output for automation
-hyperbolic instances --json
-```
-
-### Spot Instances
-
-```bash
-# Rent a spot instance
-hyperbolic spot
-
-# View available spot instances
-hyperbolic rent
-```
-
-### On-Demand Instances
-
-```bash
-# Rent an on-demand instance
-hyperbolic ondemand
-```
-
-### Instance Termination
-
-```bash
-# Terminate an instance
-hyperbolic terminate INSTANCE_ID
-```
-
-### Account Management
-
-```bash
-# Check your account balance
-hyperbolic balance
 ```
 
 ## Commands
@@ -125,60 +75,6 @@ To see all available commands and their descriptions, run:
 
 ```bash
 hyperbolic --help
-```
-
-You can also get help for any specific command:
-
-```bash
-hyperbolic [command] --help
-```
-
-## Configuration
-
-The CLI stores your API key and configuration in your home directory. The configuration file is typically located at `~/.hyperbolic-cli.yaml`.
-
-## Output Formats
-
-Most commands support both human-readable table output and JSON output for automation:
-
-```bash
-# Human-readable output (default)
-hyperbolic instances
-
-# JSON output for scripts
-hyperbolic instances --json
-```
-
-## Examples
-
-### Rent a Spot Instance
-
-```bash
-# Browse available spot instances
-hyperbolic rent
-
-# Rent a specific spot instance
-hyperbolic spot
-```
-
-### Monitor Your Instances
-
-```bash
-# View all instances with status and pricing
-hyperbolic instances
-
-# Get detailed information about a specific instance
-hyperbolic instances abc123def456
-
-# Monitor instances in a script
-hyperbolic instances --json | jq '.spot_instances.instances[] | select(.instance.status == "running")'
-```
-
-### Terminate an Instance
-
-```bash
-# Terminate a specific instance
-hyperbolic terminate abc123def456
 ```
 
 ## Error Handling
