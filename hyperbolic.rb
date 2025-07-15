@@ -1,8 +1,8 @@
 class Hyperbolic < Formula
   desc "Command-line interface for managing GPU instances on Hyperbolic"
   homepage "https://github.com/HyperbolicLabs/hyperbolic-cli"
-  url "https://github.com/HyperbolicLabs/hyperbolic-cli/archive/refs/tags/v0.0.1.tar.gz"
-  sha256 "3003635f5fd25fb6216680e3c4c6135a097d05c8ed423c2d3a9bca3602056f36"
+  url "https://github.com/HyperbolicLabs/hyperbolic-cli/archive/refs/tags/v0.0.2.tar.gz"
+  sha256 "e518fe7843b627dec73cfa31c7c1b0e7dfff0d7b1054f9abef10ed27b0e5715d"
   license "MIT"
   head "https://github.com/HyperbolicLabs/hyperbolic-cli.git", branch: "main"
 
