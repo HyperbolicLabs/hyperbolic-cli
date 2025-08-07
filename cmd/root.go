@@ -13,8 +13,8 @@ import (
 var rootCmd = &cobra.Command{
 	Use:   "hyperbolic",
 	Short: "Hyperbolic CLI for renting remote GPU instances",
-	Long:  `Hyperbolic CLI allows you to rent remote GPU instances on Hyperbolic. 
-	Please create an account at https://app.hyperbolic.ai/ to get started, and make sure to upload your SSH public key in settings.`,
+	Long: `Hyperbolic CLI allows you to rent remote GPU instances on Hyperbolic. 
+Please create an account at https://app.hyperbolic.ai/ to get started, and make sure to upload your SSH public key in settings.`,
 	// Uncomment the following line if your bare application
 	// has an action associated with it:
 	// Run: func(cmd *cobra.Command, args []string) { },
@@ -32,7 +32,7 @@ func Execute() {
 func init() {
 	// Hide the completion command from help output
 	rootCmd.CompletionOptions.DisableDefaultCmd = true
-	
+
 	// Here you will define your flags and configuration settings.
 	// Cobra supports persistent flags, which, if defined here,
 	// will be global for your application.
